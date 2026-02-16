@@ -1,0 +1,186 @@
+/* ===== CONTENEDOR ===== */
+
+.container {
+  width: 90%;
+  margin: auto;
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* ===== HEADER ===== */
+
+header {
+  background: rgb(30, 30, 31);
+  color: rgb(245, 241, 241);
+  padding: 1rem;
+  text-align: center;
+}
+
+header a {
+  color: rgb(245, 241, 241);
+  text-decoration: none;
+}
+
+header a:hover,
+header a:visited,
+header a:active {
+  color: rgb(245, 241, 241);
+  text-decoration: none;
+}
+
+/* ===== NAVEGACIÓN ===== */
+
+nav {
+  background: lightgray;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  margin: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+  height: 80px;
+  background: rgb(240, 237, 237);
+  color: rgb(19, 18, 18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== TARJETAS GENERALES ===== */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background: rgb(243, 247, 247);
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+}
+
+.card {
+  background: rgb(243, 247, 247);
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+/* ===== IMÁGENES PRINCIPALES (GRANDES) ===== */
+
+.principales {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.principales .card {
+  flex: 1;
+}
+
+.principales img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* ===== MÁS VENDIDOS (PEQUEÑOS) ===== */
+
+.mas-vendidos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mas-vendidos .card {
+  width: 160px;
+}
+
+.mas-vendidos img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+/* ===== LINKS ===== */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited, /* el titulo no se vuelva morado al darle click*/
+a:active {
+  color: inherit;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+  background: rgb(160, 160, 163);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* ===== TÍTULOS ===== */
+
+.titulo-seccion {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+/* ===== BOLSOS (todas del mismo tamaño) ===== */
+
+.bolsos .card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* ===== ACCESORIOS (todas del mismo tamaño) ===== */
+
+.accesorios .card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo img {
+  height: 10rem;
+  width: auto;
+}
+
