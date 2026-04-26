@@ -1,61 +1,119 @@
 /* ===== CONTENEDOR ===== */
 
-.container {
+.container{
   width: 90%;
   margin: auto;
-  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== ENLACES GENERALES ===== */
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited,
+a:active{
+  color: inherit;
 }
 
 /* ===== HEADER ===== */
 
-header {
-  background: rgb(30, 30, 31);
+header{
+  background: linear-gradient(to right, #1b1a1b, #e7aada);
   color: rgb(245, 241, 241);
   padding: 1rem;
   text-align: center;
 }
 
-header a {
-  color: rgb(245, 241, 241);
-  text-decoration: none;
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
 }
 
-header a:hover,
-header a:visited,
-header a:active {
+header a{
   color: rgb(245, 241, 241);
-  text-decoration: none;
+}
+
+header a:hover{
+  color: #fff;
+}
+
+.logo img{
+  height: 100px;
+  width: auto;
 }
 
 /* ===== NAVEGACIÓN ===== */
 
-nav {
+nav{
   background: lightgray;
   padding: 15px;
   text-align: center;
 }
 
-nav a {
+nav a{
   margin: 1rem;
-  text-decoration: none;
   font-weight: bold;
   color: black;
 }
 
+nav a:hover{
+  color: rgb(223, 155, 189);
+}
+
 /* ===== HERO ===== */
 
-.hero {
-  height: 80px;
-  background: rgb(240, 237, 237);
-  color: rgb(19, 18, 18);
+.hero{
+  height: 180px;
+  background: linear-gradient(to right, #f8d7e8, #f3f3f3);
+  color: #111;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.hero h2{
+  animation: aparecer 2s ease;
+}
+
+/* ===== TÍTULOS ===== */
+
+h1{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+p{
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.titulo-seccion{
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.8rem;
 }
 
 /* ===== TARJETAS GENERALES ===== */
 
-.cards {
+.cards{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -65,122 +123,156 @@ nav a {
   border-radius: 1rem;
 }
 
-.card {
+.card{
   background: rgb(243, 247, 247);
   padding: 1rem;
   box-sizing: border-box;
   text-align: center;
   border-radius: 1rem;
+  transition: all 0.3s ease;
 }
 
-/* ===== IMÁGENES PRINCIPALES (GRANDES) ===== */
+.card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
 
-.principales {
+.precio{
+font-weight:bold;
+color:#63304b;
+margin-top:0.5rem;
+font-size:1rem;
+}
+
+/* ===== SECCIÓN PRINCIPAL ===== */
+
+.principales{
   display: flex;
   gap: 1.5rem;
 }
 
-.principales .card {
+.principales .card{
   flex: 1;
 }
 
-.principales img {
+.principales img{
   width: 100%;
   height: 480px;
   object-fit: cover;
   border-radius: 1rem;
 }
 
-/* ===== MÁS VENDIDOS (PEQUEÑOS) ===== */
+/* ===== MÁS VENDIDOS ===== */
 
-.mas-vendidos {
+.mas-vendidos{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: nowrap;
   gap: 1rem;
 }
 
-.mas-vendidos .card {
-  width: 160px;
+.mas-vendidos .card{
+  flex: 1;
+  max-width: 180px;
 }
 
-.mas-vendidos img {
+.mas-vendidos img{
   width: 100%;
   height: 160px;
   object-fit: cover;
   border-radius: 0.8rem;
 }
 
-/* ===== LINKS ===== */
+/* ===== BOLSOS ===== */
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:visited, /* el titulo no se vuelva morado al darle click*/
-a:active {
-  color: inherit;
-}
-
-/* ===== FOOTER ===== */
-
-footer {
-  background: rgb(160, 160, 163);
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  margin-top: 1rem;
-}
-
-/* ===== TÍTULOS ===== */
-
-.titulo-seccion {
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 1.8rem;
-}
-
-/* ===== BOLSOS (todas del mismo tamaño) ===== */
-
-.bolsos .card img {
+.bolsos .card img{
   width: 100%;
   height: 260px;
   object-fit: cover;
   border-radius: 1rem;
 }
 
-/* ===== ACCESORIOS (todas del mismo tamaño) ===== */
+/* ===== ACCESORIOS ===== */
 
-.accesorios .card img {
+.accesorios .card img{
   width: 100%;
   height: 220px;
   object-fit: cover;
   border-radius: 1rem;
 }
 
-.logo img {
-  height: 100px;
-  width: auto;
+/* ===== FOOTER ===== */
+
+footer{
+  background: linear-gradient(to right, #1b1a1b, #e7aada);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 1.5rem 0;
+/* ===== ANIMACIONES ===== */
+
+@keyframes aparecer{
+  from{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+/* ===== CONFIGURACIÓN GENERAL ===== */
+
+html{
+  scroll-behavior: smooth;
 }
 
-.logo img {
-  height: 10rem;
-  width: auto;
+/* ===== MEDIA QUERIES ===== */
+
+@media(max-width:768px){
+
+  .header{
+    flex-direction: column;
+  }
+
+  .principales{
+    flex-direction: column;
+  }
+
+  .principales img{
+    height: 300px;
+  }
+
+  .mas-vendidos{
+    flex-wrap: wrap;
+  }
+
+  .mas-vendidos .card{
+    width: 30%;
+    max-width: none;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
 }
 
+@media(max-width:480px){
+
+  .mas-vendidos .card{
+    width: 100%;
+  }
+
+  nav a{
+    display: block;
+    margin: 0.8rem 0;
+  }
+
+  .logo img{
+    height: 7rem;
+  }
+}
